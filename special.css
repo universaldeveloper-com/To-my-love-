@@ -1,0 +1,162 @@
+/* Color and Font Variables for easy customization */
+:root {
+    --theme-bg: #1c0f1a;
+    --theme-container-bg: rgba(43, 23, 39, 0.85);
+    --theme-pink: #ffc2d1;
+    --theme-dark-pink: #ff8fab;
+    --theme-text: #fde3e3;
+    --theme-border: #ff69b4;
+    --font-heading: 'Pacifico', cursive;
+    --font-body: 'Nunito', sans-serif;
+}
+
+/* General Body Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+    background: var(--theme-bg);
+    background: linear-gradient(to bottom, #2b1228, var(--theme-bg));
+    color: var(--theme-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    overflow: hidden; /* Prevents scrollbars from appearing */
+}
+
+/* Confetti and Fireworks Containers */
+#confetti-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.fireworks-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    pointer-events: none; /* Allows clicking through it */
+}
+
+/* Main Content Box */
+.page-container {
+    background: var(--theme-container-bg);
+    padding: 40px;
+    border-radius: 30px; /* More rounded, Hello Kitty style */
+    box-shadow: 0 0 40px var(--theme-border), 0 0 60px var(--theme-pink) inset;
+    border: 3px solid var(--theme-border);
+    z-index: 10;
+    position: relative;
+    max-width: 90%;
+    width: 500px;
+    box-sizing: border-box;
+}
+
+/* Decorative Bow on the container */
+.page-container::after {
+    content: '';
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    width: 80px;
+    height: 80px;
+    background-image: url('hk-bow.png'); /* Use the same bow image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(15deg);
+}
+
+/* Question Styling */
+.question h2 {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    color: var(--theme-pink);
+    line-height: 1.4;
+    text-shadow: 0 0 10px var(--theme-dark-pink);
+}
+
+/* Button Styling */
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px; /* Pill-shaped buttons */
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.yes-btn {
+    background: linear-gradient(45deg, var(--theme-dark-pink), #ff69b4);
+    color: white;
+}
+.yes-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff69b4;
+}
+
+.no-btn {
+    background-color: #bababa;
+    color: #555;
+}
+
+/* Final Celebration Message Styling */
+#final-message.hidden {
+    display: none;
+}
+
+.hello-kitty-character {
+    width: 120px;
+    margin-bottom: 20px;
+    /* Cute bouncing animation */
+    animation: bounce 2s infinite ease-in-out;
+}
+
+.celebration-title {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    color: var(--theme-pink);
+    /* Glowing text animation */
+    animation: text-glow 1.5s infinite alternate;
+}
+
+#final-message p {
+    font-size: 1.3rem;
+    color: var(--theme-text);
+}
+
+/* Keyframe Animations */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes text-glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px var(--theme-pink), 0 0 30px var(--theme-border);
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px var(--theme-pink), 0 0 40px var(--theme-border);
+    }
+  }
