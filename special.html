@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Question for You...</title>
+    <!-- Link to the updated CSS file -->
+    <link rel="stylesheet" href="special.css">
+    <!-- Google Fonts for that cute, soft look -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Canvas for the confetti effect -->
+    <canvas id="confetti-canvas"></canvas>
+    
+    <!-- Container for the CSS fireworks -->
+    <div class="fireworks-container"></div>
+
+    <!-- Main content container -->
+    <div class="page-container">
+        
+        <!-- This div will hold the questions -->
+        <div id="question-container">
+            <!-- Questions are injected here by special.js -->
+        </div>
+
+        <!-- This is the final celebration message, hidden initially -->
+        <div id="final-message" class="hidden">
+            
+            <!-- Add your Hello Kitty character image here -->
+            <img src="hk-character.png" alt="Hello Kitty" class="hello-kitty-character"/>
+            
+            <h1 class="celebration-title">Congratulations!</h1>
+            <p>We are now married officially and you are mine now ❤️</p>
+        </div>
+    </div>
+
+    <!-- External JavaScript Libraries -->
+    <!-- Confetti library for the party effect -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    
+    <!-- Your JavaScript file to control the logic -->
+    <!-- Make sure you have the updated special.js from the previous step -->
+    <script src="special.js"></script>
+</body>
+</html>
