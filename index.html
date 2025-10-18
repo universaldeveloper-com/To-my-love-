@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Very Special Message For You</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- All existing sections from Hero to Butterfly -->
+    <div class="falling-petals"></div>
+    <div class="floral-corner top-left"></div>
+    <div class="floral-corner top-right"></div>
+    <section id="hero"><video autoplay loop muted playsinline class="back-video"><source src="my-video.mp4" type="video/mp4"></video><div class="hero-content"><h1 class="main-title">To My Dearest One</h1></div></section>
+    <div class="music-player"><audio id="proposal-song" loop><source src="my-song.mp3" type="audio/mpeg"></audio><button id="play-pause-btn">♫</button></div>
+    <section id="letter-section"><div class="letter-container" id="letterContainer"><div class="envelope"><div class="envelope-flap"></div><div class="envelope-body"></div><div class="wax-seal">❤️</div></div><div class="letter"><h3>To my dear ones 💞</h3><p> I love you so much kila not even a single minute seems joyful without you . 24 hours a day thinking about you and still feels less I have never loved a person such deep as I loved you . You are my everything and anything. My first priority in everything is you . I loves your eyes so much I love you smile even more I fall more and more for you everything you with me seems like I was in a fantasy dream the way you talk the way you care towards me always make me wonder how much can be a person fell in love with the person I already love I'm give my everything to you I'm giving my heart to you please don't break it I love you so much together forever</p><p class="signature">SAM</p><a href="special.html" class="special-one-btn">Click For a Surprise...</a></div></div></section>
+    <section id="timer-section"><div class="timer-container"><h2>Our Journey Together</h2><ul class="milestones"><li><span>The Day We Met:</span> July 26th</li><li><span>The Day I Proposed:</span> August 7th</li><li><span>The Moment You Said Yes:</span> August 7th, 5:23 PM</li></ul><div class="countdown-title">Together For...</div><div id="countdown"><div class="time-unit"><span id="days">00</span><small>Days</small></div><div class="time-unit"><span id="hours">00</span><small>Hours</small></div><div class="time-unit"><span id="minutes">00</span><small>Minutes</small></div><div class="time-unit"><span id="seconds">00</span><small>Seconds</small></div></div><p id="typing-text">“That’s how long you’ve been my peace, my happiness, my reason to keep going.”</p><a href="#stars-section" class="romantic-button">See how long forever lasts 💖</a></div></section>
+    <section id="stars-section"><div id="stars-bg"></div><div id="stars-bg2"></div><div id="stars-bg3"></div><h2>Some memories I'll never forget...</h2><div class="interactive-star star-1" data-message-id="1"></div><div class="interactive-star star-2" data-message-id="2"></div><div class="interactive-star star-3" data-message-id="3"></div><div class="interactive-star star-4" data-message-id="4"></div><div class="interactive-star star-5" data-message-id="5"></div><div class="interactive-star star-6" data-message-id="6"></div><div class="interactive-star star-7" data-message-id="7"></div><div class="interactive-star star-8" data-message-id="8"></div><div class="interactive-star star-9" data-message-id="9"></div><div class="interactive-star star-10" data-message-id="10"></div><div class="interactive-star star-11" data-message-id="11"></div><div class="interactive-star star-12" data-message-id="12"></div></section>
+    <section id="picture-section"><div class="picture-container"><h3>And then, there's this moment...</h3><img src="our-picture.jpg" alt="A special memory" id="memory-pic"><p>(Click the picture)</p></div></section>
+    <section id="moon-section"><h3>I love you...</h3><div id="romantic-moon"></div><h2>...to the moon and back.</h2></section>
+    <section id="counter-section"><div class="counter-container"><button id="love-counter-btn">See how much I love you</button><div id="love-counter-display" class="hidden"><span id="love-counter">1</span></div></div></section>
+    <section id="butterfly-section"><div class="butterfly-container" id="butterfly-container"><div class="butterfly b1"></div><div class="butterfly b2"></div><div class="butterfly b3"></div><div class="butterfly b4"></div><div class="butterfly b5"></div><div class="butterfly b6"></div><div class="butterfly b7"></div><div class="butterfly b8"></div><div class="butterfly b9"></div><div class="butterfly b10"></div><div class="butterfly b11"></div><div class="butterfly b12"></div><div id="final-message"><h2>My One and Only,</h2><p>Every star we looked at, every memory we made... it all leads to this. You are my forever. Will you marry me?</p></div></div></section>
+
+    <!-- ============================================= -->
+    <!-- === NEW: THE FINAL PROPOSAL SECTION === -->
+    <!-- ============================================= -->
+    <section id="proposal-section">
+        <div class="proposal-container">
+            <h2 id="final-question">Kila, I really love you. Will you be with me forever? 💞</h2>
+            <div id="final-buttons" class="buttons-container">
+                <button id="yes-btn">Yes!</button>
+                <button id="no-btn">No</button>
+            </div>
+            <div id="sad-emoji-container"></div>
+            <div id="balloon-container"></div>
+        </div>
+    </section>
+
+    <!-- All Modal Popups -->
+    <div id="star-modal" class="modal modal-hidden"><div class="modal-content"><span class="modal-close-btn">&times;</span><p id="modal-message-text"></p></div></div>
+    <div id="picture-modal" class="modal modal-hidden"><div class="modal-content picture-modal-content"><span class="modal-close-btn">&times;</span><p>This picture? This is the moment I realized I didn't just love you, I couldn't imagine a single day of my life without you in it.</p></div></div>
+    <div id="moon-modal" class="modal modal-hidden"><div class="modal-content moon-modal-content"><span class="modal-close-btn">&times;</span><p>My Dearest,<br>Just like the moon pulls the tides,“No matter how far we are, we’re under the same moon — and I’m always thinking of you.”</p></div></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
